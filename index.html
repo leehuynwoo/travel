@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>We're GoeDi</title>
+    <title>We're Geodi</title>
     <!-- 폰트  /* font-family: 'Josefin Sans', sans-serif; */ -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
     <!-- CSS -->
@@ -24,15 +24,17 @@
         <div class="wrap__inner">
             <!-- 네비게이션 시작 -->
             <nav id="nav">
-                <div class="log">
-                    <img src="img/logo.svg" alt="logo" class="logo__img">
+                <div class="nav__wrap">
+                    <div class="log">
+                        <img src="img/logo.svg" alt="logo" class="logo__img">
+                    </div>
+                    <ul class="nav__menus">
+                        <li class="nav__menu">패키지</li>
+                        <li class="nav__menu">체험존</li>
+                        <li class="nav__menu">유튜브</li>
+                        <li class="nav__menu login single">LOGIN</li>
+                    </ul>
                 </div>
-                <ul class="nav__menus">
-                    <li class="nav__menu">패키지</li>
-                    <li class="nav__menu">굿즈</li>
-                    <li class="nav__menu">유튜브</li>
-                    <li class="nav__menu login single">LOGIN</li>
-                </ul>
             </nav>
             <!-- 네비게이션 헤더부분 끝 -->
 
@@ -40,8 +42,8 @@
             <section id="visual">
                 <div class="wrapper">
                     <div class="background">
-                        <img src="img/geodi.png" alt="geodi" id="goedi">
-                        <div id="wearegoedi">We're GoeDi</div>
+                        <img src="img/geodi.png" alt="geodi" id="Geodi">
+                        <div id="weareGeodi">We're Geodi</div>
                         <img src="img/landscape.png" alt="bg" id="landscape">
                     </div>
                     <div class="visual__key">
@@ -52,7 +54,9 @@
                             반갑습니다. 우리는 영화 속 장소를 직접<br>
                             방문하는 여행 유튜버 크루 '거디'입니다.
                         </div>
-                        <button class="double_box membership">MEMBER SHIP</button>
+                        <div class="btn__wrap membership">
+                            <button class="double_box membership">MEMBER SHIP</button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -67,11 +71,16 @@
                     <div class="section__sub">
                         영화 속 거기 어디야? 영화와 여행을 사랑하는 우리의 이야기를 전해드릴께요.
                     </div>
-                    <iframe class="intro_video" width="1280" height="720"
-                        src="https://www.youtube.com/embed/sr3O7ArQTYY" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <img src="" alt="">
+                    <div class="video__wrap">
+                        <div class="video__inner">
+                            <iframe class="intro_video" width="1280" height="720"
+                                src="https://www.youtube.com/embed/sr3O7ArQTYY" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
                     </video>
                     <button class="single">영상 더 보기 </button>
                 </div>
@@ -93,28 +102,28 @@
                                 <img src="img/recent1.png" alt="recent_vedio" class="recently__img">
                             </div>
                             <div class="notof20b" style="margin-top: 12px;">아메리칸 프로젝트 지금 시작합니다!</div>
-                            <div class="notof16r">2022년 4월 8일</div>
+                            <div>2022년 4월 8일</div>
                         </div>
                         <div class="recently__content c02 right">
                             <div>
                                 <img src="img/recent2.png" alt="recent_vedio" class="recently__img">
                             </div>
                             <div class="notof20b" style="margin-top: 12px;">드라마 [도깨비] 촬영지에서 만난 그녀</div>
-                            <div class="notof16r">2022년 4월 15일</div>
+                            <div>2022년 4월 15일</div>
                         </div>
                         <div class="recently__content c03 left">
                             <div>
                                 <img src="img/recent3.png" alt="recent_vedio" class="recently__img">
                             </div>
                             <div class="notof20b" style="margin-top: 12px;">야차 촬영지가 한국인거 알고 있었음??</div>
-                            <div class="notof16r">2022년 4월 20일</div>
+                            <div>2022년 4월 20일</div>
                         </div>
                         <div class="recently__content c04 right">
                             <div>
                                 <img src="img/recent4.png" alt="recent_vedio" class="recently__img">
                             </div>
                             <div class="notof20b" style="margin-top: 12px;">그 영화 CG작업장으로 찾아가 봤습니다!</div>
-                            <div class="notof16r">2022년 4월 29일 </div>
+                            <div>2022년 4월 29일 </div>
                         </div>
                     </div>
                 </div>
@@ -181,12 +190,15 @@
                     <div class="section__sub">
                         Geodi가 다녀온 여행 코스를 함께 해봐요. 팀Geodi가 운영하는 패키지 여행, 거기 어디
                     </div>
-                    <iframe class="reco_vedio" width="1179" height="664" src="https://www.youtube.com/embed/QIudE-rLL3k"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    </video>
-
+                    <div class="video__wrap">
+                        <div>
+                            <iframe class="reco_vedio" width="1179" height="664"
+                                src="https://www.youtube.com/embed/QIudE-rLL3k" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
                     <!-- 영상 PiCK -->
                     <div class="pick__contents content1">
                         <div class="inner">
@@ -226,6 +238,7 @@
                                 <div class="pick__detail__text hyef16">
                                     호텔 델루나에서 장만월(아이유님)이 운영하던 그 호텔에 다녀왔습니다. 드라마에서는 ‘서울’에 위치하는 설정이였지만 실제 위치는 목포입니다.<br>
                                     이번 영상에는 목포에 거주하시는 구독자님께서 특별 가이드를 해주셨어요(정말 감사합니다!). 목포에서 30년 거주한 구독자님의 숨은 맛집까지 구석구석
+                                    구경하고 왔습니다!
                                 </div>
                                 <div class="pick__location">
                                     <!-- * 카카오맵 - 지도퍼가기 -->
@@ -259,29 +272,31 @@
                             <img src="img/tag.svg" alt="icon">
                             영상 속 하이라이트
                         </div>
-                        <div class="swiper recoslider">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper recoslider">
-                                <!-- Slides -->
-                                <div class="swiper-slide recoslider"><img src="" alt=""></div>
-                                <div class="swiper-slide recoslider"><img src="" alt=""></div>
-                                <div class="swiper-slide recoslider"><img src="" alt=""></div>
-                                <div class="swiper-slide recoslider"><img src="" alt="">
+                        <div class="swiper__box">
+                            <div class="swiper recoslider">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper recoslider">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide recoslider"><img src="" alt=""></div>
+                                    <div class="swiper-slide recoslider"><img src="" alt=""></div>
+                                    <div class="swiper-slide recoslider"><img src="" alt=""></div>
+                                    <div class="swiper-slide recoslider"><img src="" alt="">
+                                    </div>
+                                    <div class="swiper-slide recoslider"><img src="" alt="">
+                                    </div>
+                                    <div class="swiper-slide recoslider">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="swiper-slide recoslider">
+                                        <img src="" alt="">
+                                    </div>
                                 </div>
-                                <div class="swiper-slide recoslider"><img src="" alt="">
-                                </div>
-                                <div class="swiper-slide recoslider">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="swiper-slide recoslider">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <!-- If we need pagination -->
-                            <div class="swiper-pagination"></div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
 
-                            <!-- If we need scrollbar -->
-                            <div class="swiper-scrollbar"></div>
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
                         </div>
                     </div>
                     <!-- 영상 속 하이라이트 끝 -->
@@ -308,13 +323,18 @@
                                     <div class="plan__explain" style="margin-bottom: 10px;">
                                         점심식사 : 리더 혁수가 목포 최고 맛집이라고 칭찬했던 그 집에서 식사
                                     </div>
-                                    <div class="swiper photo_slider">
-                                        <!-- Additional required wrapper -->
-                                        <div class="swiper-wrapper photo_slider">
-                                            <!-- Slides -->
-                                            <div class="swiper-slide photo_slider"><img src="" alt=""></div>
-                                            <div class="swiper-slide photo_slider"><img src="" alt=""></div>
-                                            <div class="swiper-slide photo_slider"><img src="" alt=""></div>
+                                    <div class="swiper__box photo_slider">
+                                        <div class="swiper photo_slider">
+                                            <!-- Additional required wrapper -->
+                                            <div class="swiper-wrapper photo_slider">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide photo_slider"><img src="img/example1.png"
+                                                        alt="example"></div>
+                                                <div class="swiper-slide photo_slider"><img src="img/example2.png"
+                                                        alt="example"></div>
+                                                <div class="swiper-slide photo_slider"><img src="img/example3.png"
+                                                        alt="example"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -322,13 +342,18 @@
                                     <div class="plan__explain" style="margin-bottom: 10px;">
                                         점심식사 : 리더 혁수가 목포 최고 맛집이라고 칭찬했던 그 집에서 식사
                                     </div>
-                                    <div class="swiper photo_slider">
-                                        <!-- Additional required wrapper -->
-                                        <div class="swiper-wrapper photo_slider">
-                                            <!-- Slides -->
-                                            <div class="swiper-slide photo_slider"><img src="" alt=""></div>
-                                            <div class="swiper-slide photo_slider"><img src="" alt=""></div>
-                                            <div class="swiper-slide photo_slider"><img src="" alt=""></div>
+                                    <div class="swiper__box photo_slider">
+                                        <div class="swiper photo_slider">
+                                            <!-- Additional required wrapper -->
+                                            <div class="swiper-wrapper photo_slider">
+                                                <!-- Slides -->
+                                                <div class="swiper-slide photo_slider"><img src="img/example1.png"
+                                                        alt="example"></div>
+                                                <div class="swiper-slide photo_slider"><img src="img/example2.png"
+                                                        alt="example"></div>
+                                                <div class="swiper-slide photo_slider"><img src="img/example3.png"
+                                                        alt="example"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -382,7 +407,308 @@
                     </div>
                 </div>
             </section>
+            <!-- 거기어디 끝 -->
+
+            <!-- 다른상품 -->
+            <section id="product">
+                <div class="wrapper">
+                    <div class="section__title">
+                        다른 상품들도 있어요!
+                    </div>
+                    <div class="section__sub">
+                        더 많은 여행지를 둘러보세요.
+                    </div>
+                    <div class="destinations__wrap">
+                        <div class="more">전체 상품 보기 <img src="img/more_red.png" alt="more"></div>
+                        <div class="destinations__inner">
+                            <div class="destination">
+                                <div class="destination__card">
+                                    <img class="destination__top" src="img/destination1.png" alt="destination_img">
+                                    <div class="destination__mid">
+                                        <div class="destination__name">
+                                            당일치기 여행
+                                        </div>
+                                        <div class="destination__info">
+                                            [미스터선샤인] 논산 선샤인랜드와 딸기체험을 해보세요
+                                        </div>
+                                    </div>
+                                    <div class="destination__bottom">
+                                        <div class="price" value="45000">
+                                            45,000원 ~
+                                        </div>
+                                        <div class="go__product">
+                                            <img src="img/go_product.svg" alt="go_product">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="destination">
+                                <div class="destination__card">
+                                    <img class="destination__top" src="img/destination2.png" alt="destination_img">
+                                    <div class="destination__mid">
+                                        <div class="destination__name">
+                                            당일치기 여행
+                                        </div>
+                                        <div class="destination__info">
+                                            [미스터선샤인] 논산 선샤인랜드와 딸기체험을 해보세요
+                                        </div>
+                                    </div>
+                                    <div class="destination__bottom">
+                                        <div class="price" value="45000">
+                                            45,000원 ~
+                                        </div>
+                                        <div class="go__product">
+                                            <img src="img/go_product.svg" alt="go_product">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="destination">
+                                <div class="destination__card">
+                                    <img class="destination__top" src="img/destination3.png" alt="destination_img">
+                                    <div class="destination__mid">
+                                        <div class="destination__name">
+                                            당일치기 여행
+                                        </div>
+                                        <div class="destination__info">
+                                            [미스터선샤인] 논산 선샤인랜드와 딸기체험을 해보세요
+                                        </div>
+                                    </div>
+                                    <div class="destination__bottom">
+                                        <div class="price" value="45000">
+                                            45,000원 ~
+                                        </div>
+                                        <div class="go__product">
+                                            <img src="img/go_product.svg" alt="go_product">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="destination">
+                                <div class="destination__card">
+                                    <img class="destination__top" src="img/destination4.png" alt="destination_img">
+                                    <div class="destination__mid">
+                                        <div class="destination__name">
+                                            당일치기 여행
+                                        </div>
+                                        <div class="destination__info">
+                                            [미스터선샤인] 논산 선샤인랜드와 딸기체험을 해보세요
+                                        </div>
+                                    </div>
+                                    <div class="destination__bottom">
+                                        <div class="price" value="45000">
+                                            45,000원 ~
+                                        </div>
+                                        <div class="go__product">
+                                            <img src="img/go_product.svg" alt="go_product">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="section__title">
+                        체험<em>Zone</em>
+                    </div>
+                    <div class="section__sub">
+                        팀Geodi가 꼼꼼하게 고른 체험 프로그램입니다.
+                    </div>
+                    <div class="box1" style="width: 100%;">
+                        <div class="swiper experience">
+                            <!-- Slides -->
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="img/experience1.png" alt="img">
+                                    <div class="experience__name">설악산 트래킹 4hr</div>
+                                </div>
+                                <div class="swiper-slide"><img src="img/example1.png" alt="img">
+                                    <div class="experience__name">호텔 코스요리 3hr</div>
+                                </div>
+                                <div class="swiper-slide"><img src="img/experience3.png" alt="img">
+                                    <div class="experience__name">내가 딴 포도로 와인만들기 4hr</div>
+                                </div>
+                                <div class="swiper-slide"><img src="img/example3.png" alt="img">
+                                    <div class="experience__name">장작으로 통구이해먹기 2hr</div>
+                                </div>
+                                <div class="swiper-slide"><img src="img/experience2.png" alt="img">
+                                    <div class="experience__name">양양바다에서 서핑 3hr</div>
+                                </div>
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"><img src="img/arrow_left.svg" alt="">
+                            </div>
+                            <div class="swiper-button-next"><img src="img/arrow_right.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- 다른상품 끝 -->
+
+            <!-- 굿즈 -->
+            <section id="goods">
+                <div class="wrapper">
+                    <div class="section__title">
+                        <em>Goods</em>
+                    </div>
+                    <div class="section__sub">
+                        우리의 결속력을 올려 줄 핫 템들을 구경해 보세요
+                    </div>
+                    <div class="goods__wrap">
+                        <div class="more">상품 더 보러가기 <img src="img/more_red.png" alt="more"></div>
+                        <div class="goods__inner">
+                            <div class="goods">
+                                <div class="goods__card">
+                                    <div class="goos__top">
+                                        <img class="goods__thum" src="img/goods2.png" alt="destination_img">
+                                    </div>
+                                    <div class="goods__mid">
+                                        <div class="goods__name">
+                                            Geodi 티셔츠
+                                        </div>
+                                    </div>
+                                    <div class="goods__bottom">
+                                        <div class="price" value="56000">
+                                            33,000원
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods__card">
+                                    <div class="goos__top">
+                                        <img class="goods__thum" src="img/goods1.png" alt="destination_img">
+                                        <img class="goods_discount" src="img/discount.svg" alt="icon_discount">
+                                        <p class="goods_percent"> 10%</p>
+                                    </div>
+                                    <div class="goods__mid">
+                                        <div class="goods__name">
+                                            로고 모자
+                                        </div>
+                                    </div>
+                                    <div class="goods__bottom">
+                                        <div class="price" value="56000">
+                                            56,000원
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods__card">
+                                    <div class="goos__tops">
+                                        <img class="goods__thum" src="img/goods3.png" alt="destination_img">
+                                    </div>
+                                    <div class="goods__mid">
+                                        <div class="goods__name">
+                                            긴팔 후드티셔츠
+                                        </div>
+                                    </div>
+                                    <div class="goods__bottom">
+                                        <div class="price" value="56000">
+                                            56,000원
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods__card">
+                                    <div class="goos__top">
+                                        <img class="goods__thum" src="img/goods4.png" alt="destination_img">
+                                        <img class="goods_discount" src="img/discount.svg" alt="icon_discount">
+                                        <p class="goods_percent">
+                                            05%
+                                        </p>
+                                    </div>
+                                    <div class="goods__mid">
+                                        <div class="goods__name">
+                                            핸드폰 케이스
+                                        </div>
+                                    </div>
+                                    <div class="goods__bottom">
+                                        <div class="price" value="56000">
+                                            19,000원
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
+        <!-- 굿즈 끝 -->
+
+        <!-- 푸터 -->
+        <footer id="footer__wrap">
+            <div class="footer__ineer">
+                <div class="footer menus">
+                    <div class="menu">
+                        공지사항
+                    </div>
+                    <div class="menu">
+                        이용약관
+                    </div>
+                    <div class="menu">
+                        개인정보처리방침
+                    </div>
+                    <div class="menu">
+                        입점문의
+                    </div>
+                    <div class="menu">
+                        채용안내
+                    </div>
+                </div>
+                <div class="footer detail">
+                    <p>(주) 거기어디야
+                        | 대표이사 민혁수 | 사업자 등록번호 123-45-67890 </p>
+                    <p>통신판매업 신고 거기-123456호 | 관광사업자 등록번호: 제1026-24호</p>
+                    <p>고객행복 센터 : 1234-0987 오전 9시 ~ 오후 6시</p>
+                    <p>주소 : 서울특별시 거기어디구 거기로 1234 3층 </p>
+                </div>
+                <div class="footercopyright">Copyright Geodi COMPANY Corp. All rights reserved.</div>
+            </div>
+        </footer>
+        <!-- 푸터 끝 -->
+
+        <div class="cursors">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+
     </div>
     <!-- 달력 -->
     <script src="js/calendar.js"></script>
