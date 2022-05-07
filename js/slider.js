@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (event) {
 
     const swiper1 = new Swiper('.recoslider', {
-        slidesPerView: 1,
-        slidesOffsetBefore: 0,
-        centeredSlides: false, // true 인 경우 활성 슬라이드는 항상 왼쪽이 아닌 가운데에 배치됩니다.
         grabCursor: true,
     });
 
@@ -61,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let currentX = 0
         let currentY = 0
 
-        let speed = 0.2 - index *0.0018
+        let speed = 0.2 - index * 0.0018
 
         const animate = function () {
             currentX += (aimX - currentX) * speed
