@@ -26,4 +26,5 @@ bg.addEventListener('click', function () {
     }
 })
 
-
+var intViewportWidth = window.innerWidth;
+console.log(Window.innerWidth);
