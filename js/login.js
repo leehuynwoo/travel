@@ -18,7 +18,6 @@ bg.addEventListener('click', function () {
     if (bg.classList.contains('active')) {
         loginForm.classList.remove('active');
         bg.classList.remove('active');
+        document.body.classList.remove("stop-scrolling");
     }
 })
-
-const formSingIn = document.querySelector('form[type=submit]'); 
