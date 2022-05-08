@@ -17,6 +17,18 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/slider.js"></script>
+
+
+
+    <!-- 부트스트랩 -->
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -32,7 +44,7 @@
                         <li class="nav__menu">패키지</li>
                         <li class="nav__menu">체험존</li>
                         <li class="nav__menu">유튜브</li>
-                        <li class="nav__menu login single">LOGIN</li>
+                        <li class="nav__menu login single">Sign in</li>
                     </ul>
                 </div>
             </nav>
@@ -207,28 +219,6 @@
                                 영상 PiCK | <p class="vedio__name"> 호텔 델루나</p>
                             </div>
                             <div class="font_btn">팀Geodi와 함께 하기</div>
-                            <div class="calendar__box">
-                                <!-- https://codepen.io/ylem76/pen/xxrMOEJ -->
-                                <div class="sec_cal">
-                                    <div class="cal_nav">
-                                        <a href="javascript:;" class="nav-btn go-prev">prev</a>
-                                        <div class="year-month"></div>
-                                        <a href="javascript:;" class="nav-btn go-next">next</a>
-                                    </div>
-                                    <div class="cal_wrap">
-                                        <div class="days">
-                                            <div class="day">MON</div>
-                                            <div class="day">TUE</div>
-                                            <div class="day">WED</div>
-                                            <div class="day">THU</div>
-                                            <div class="day">FRI</div>
-                                            <div class="day">SAT</div>
-                                            <div class="day">SUN</div>
-                                        </div>
-                                        <div class="dates"></div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="pick__video__contents">
                             <div class="poster">
@@ -513,7 +503,7 @@
                     </div>
                 </div>
             </div>
-            <div class="wrapper">
+            <div class="wrapper a2">
                 <div class="section__title">
                     체험<em>ZONE</em>
                 </div>
@@ -674,6 +664,29 @@
     </footer>
     <!-- 푸터 끝 -->
 
+    <!-- 로그인 모달 -->
+    <div class="bg"></div>
+    <form>
+        <div class="logo"><img src="img/logo.svg" alt="logo"></div>
+        <div class="form-group">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label class="form-check-label" for="remember"><input type="checkbox" id="remeber"> Remember me</label>
+        </div>
+        <div class="button_box">
+            <button type="submit" class="btn single">Sign in</button>
+            <button type="button" class="btn single">Sign up</button>
+        </div>
+    </form>
+
+    <!-- 로그인 끝 -->
+    <!-- 마우스 커서 -->
     <div class="cursors">
         <div></div>
         <div></div>
@@ -714,9 +727,10 @@
 
 
 
-    </div>
-    <!-- 달력 -->
-    <script src="js/calendar.js"></script>
+    </div>\
+    <script src="js/mouse.js"></script>
+    <script src="js/visual.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
