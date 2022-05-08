@@ -45,6 +45,14 @@ body {
     color: var(--text-color);
     font-family: var(--f_noto);
     box-sizing: border-box;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 section {
@@ -934,7 +942,8 @@ form {
     display: none;
 }
 
-.bg.active, form.active {
+.bg.active,
+form.active {
     display: block;
 }
 
@@ -968,10 +977,10 @@ form .btn.single:hover {
     color: #fff;
 }
 
-.stop-scrolling { 
-  height: 100%; 
-  overflow: hidden; 
-} 
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
 
 /* 커서 */
 div.cursors div {
