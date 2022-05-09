@@ -1029,7 +1029,7 @@ div.cursors div {
 }
 
 
-@media screen and (max-width:780px) {
+@media screen and (max-width:900px) {
 
     /* 전체 , section */
     section {
@@ -1085,6 +1085,10 @@ div.cursors div {
 
 
     /* 다양한 상품 */
+.destinations__inner {
+    justify-content: space-evenly;
+}
+
     .destination,
     .destination__card img {max-width: 356px;}
 
